@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Фригорис](https://up.htmlacademy.ru/adaptive/12/user/210151).
-* Наставник: `Неизвестно`.
+* Наставник: `(╯︵╰,)`.
 
 ---
 
