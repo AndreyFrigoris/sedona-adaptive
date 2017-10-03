@@ -1,0 +1,21 @@
+.service {
+  @include list;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  background-color: $color-bg-gray;
+}
+
+.service__item {
+  padding: 15px 20px 15px 22%;
+}
+
+.service__item-title {
+  margin-top: 0;
+  @include text(18px, 26px);
+}
+
+.service__item-description {
+  margin: 0;
+  line-height: 21px;
+}

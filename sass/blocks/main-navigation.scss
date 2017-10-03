@@ -1,0 +1,15 @@
+.main-navigation {
+  @include text(18px, 40px);
+  font-weight: bold;
+  background-color: $color-bg-blue;
+}
+
+.main-navigation__list {
+  @include list;
+  text-align: center;
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  color: $color-light;
+}
