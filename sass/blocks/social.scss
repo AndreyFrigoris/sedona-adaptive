@@ -12,7 +12,7 @@
   height: 48px;
   background-color: $color-bg-blue;
 
-  &:not(last-child) {
+  &:not(:last-child) {
     margin-right: 6px;
   }
 }

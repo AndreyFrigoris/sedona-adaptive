@@ -11,8 +11,8 @@
 }
 
 .service__item-title {
-  margin-top: 0;
   @include text(18px, 26px);
+  margin-top: 0;
 }
 
 .service__item-description {
