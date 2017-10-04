@@ -1,0 +1,13 @@
+.photonvideo {
+  line-height: 24px;
+  text-align: center;
+}
+
+.photonvideo__title {
+  @include text(18px, 26px);
+}
+
+.photonvideo__description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
