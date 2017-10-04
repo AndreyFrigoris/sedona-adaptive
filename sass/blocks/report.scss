@@ -1,0 +1,52 @@
+.report {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  width: 320px;
+  text-align: center;
+  background-color: $color-light;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 12px rgba(200, 200, 200, 0.8);
+
+  &--not-sent {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  &--sent {
+    padding-top: 30px;
+  }
+
+  &--open {
+    display: block;
+  }
+}
+
+.report__title {
+  @include text(18px, 26px);
+}
+
+.report__description {
+  @include text(14px, 24px);
+  padding-left: 50px;
+  padding-right: 50px;
+  color: $color-text-light;
+}
+
+.report__button {
+  @include text(18px, 26px);
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.report__button-wrapper {
+  padding: 20px;
+  background-color: $color-input;
+}
+
+.report__button-wrapper .report__button {
+  width: 100%;
+}

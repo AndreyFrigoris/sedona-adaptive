@@ -1,0 +1,32 @@
+.site-title {
+  padding-top: 52px;
+  text-align: center;
+  background-color: $color-bg-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center -230px;
+  background-repeat: no-repeat;
+
+  &--index {
+    padding-top: 90px;
+    background-position: center;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 65px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.site-title__image {
+  width: 230px;
+
+  &--index {
+    width: 280px;
+    margin-bottom: 18px;
+  }
+}

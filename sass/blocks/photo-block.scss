@@ -1,0 +1,29 @@
+.photo-block {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.photo-block__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.photo-block__item-description {
+  padding-top: 20px;
+}
+
+.photo-block__item-title {
+  @include text(14px, 24px);
+  margin: 0;
+}
+
+.photo-block__item-author {
+  color: $color-text-light;
+  text-transform: none;
+}
+
+.photo-block__item-likes {
+  padding-left: 38px;
+  font-weight: bold;
+}

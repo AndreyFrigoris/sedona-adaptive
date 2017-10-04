@@ -1,0 +1,10 @@
+.video-block__interest {
+  @include text(18px, 26px);
+  font-weight: bold;
+}
+
+.video-block__manual {
+  padding-left: 40px;
+  padding-right: 40px;
+  color: $color-text-light;
+}

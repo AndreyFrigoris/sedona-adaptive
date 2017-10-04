@@ -1,0 +1,14 @@
+.search-hotels {
+  padding: 20px;
+  text-align: center;
+  background-color: $color-light;
+}
+
+.search-hotels__interest {
+  @include text(21px, 26px);
+}
+
+.search-hotels__manual {
+  line-height: 24px;
+  color: $color-text-light;
+}
