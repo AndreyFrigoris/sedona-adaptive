@@ -1,0 +1,213 @@
+.review {
+  line-height: 26px;
+}
+
+.review__title-wrapper {
+  padding-top: 24px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.review__title {
+  @include text(18px, 26px);
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.review__description {
+  line-height: 24px;
+  text-align: center;
+  color: $color-text-light;
+}
+
+.review__form {
+  margin-bottom: 47px;
+}
+
+.review__fieldset {
+  padding-top: 18px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  &--visited {
+    padding-bottom: 0;
+  }
+
+  &--no-border {
+    border: none;
+  }
+}
+
+.review__legend {
+  padding-top: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.review__name-inner {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 17px;
+  padding-top: 3px;
+}
+
+.review__name-label {
+  padding-right: 15px;
+  color: $color-text-light;
+}
+
+.review__name-input {
+  @include text(18px, 26px);
+  flex-grow: 1;
+  width: 150px;
+  padding: 16px 21px;
+  font-family: $main-font;
+  font-weight: bold;
+  background-color: $color-input;
+  border: none;
+  box-sizing: border-box;
+}
+
+.review__contact-wrapper {
+  padding-bottom: 10px;
+}
+
+.review__contant-inner {
+  padding-top: 2px;
+  margin-bottom: 10px;
+}
+
+.review__contact-label {
+  display: block;
+  padding-left: 22px;
+  margin-bottom: 7px;
+  color: $color-text-light;
+}
+
+.review__contact-input {
+  @include text(18px, 26px);
+  width: 100%;
+  padding: 16px 70px 16px 21px;
+  font-family: $main-font;
+  font-weight: bold;
+  background-color: $color-input;
+  border: none;
+  box-sizing: border-box;
+}
+
+.review__rating-wrapper {
+  padding-bottom: 14px;
+}
+
+.review__rating-input {
+  display: none;
+}
+
+.review__rating-label {
+  @include text(18px, 26px);
+  position: relative;
+  padding: 21px 0 21px 80px;
+  display: block;
+  font-weight: bold;
+  text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: $color-input;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    display: none;
+    width: 22px;
+    height: 22px;
+    background-color: #333333;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.review__rating-input:checked + .review__rating-label::after {
+  display: block;
+}
+
+
+.review__visited-input {
+  display: none;
+}
+
+.review__visited-label {
+  @include text(18px, 26px);
+  position: relative;
+  padding: 13px 0 13px 80px;
+  margin-bottom: 28px;
+  display: block;
+  font-weight: bold;
+  text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: $color-input;
+    border-radius: 5px;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    display: none;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.review__visited-input:checked + .review__visited-label::after {
+  display: block;
+}
+
+.review__impression-textarea {
+  @include text(18px, 26px);
+  width: 100%;
+  height: 160px;
+  padding: 15px 20px;
+  margin-bottom: 35px;
+  font-family: $main-font;
+  font-weight: bold;
+  background-color: $color-input;
+  border: none;
+  box-sizing: border-box;
+}
+
+.review__submit {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}

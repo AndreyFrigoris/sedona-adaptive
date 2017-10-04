@@ -1,9 +1,14 @@
 .button {
   @include text(21px, 26px);
   display: block;
+  width: 100%;
   padding: 15px;
+  font-family: $main-font;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
   color: $color-light;
   background-color: $color-bg-blue;
+  border: none;
+  box-sizing: border-box;
 }

@@ -14,10 +14,17 @@
   url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $main-font;
   font-size: 14px;
   text-transform: uppercase;
   color: $color-text;
   background-color: $color-input;
+  box-sizing: border-box;
 }
