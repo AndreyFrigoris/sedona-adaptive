@@ -1,7 +1,10 @@
 .main-navigation {
   @include text(18px, 40px);
   font-weight: bold;
-  background-color: $color-bg-blue;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .main-navigation__list {
@@ -9,7 +12,29 @@
   text-align: center;
 }
 
+.main-navigation__item {
+  &:not(:last-child) .main-navigation__link {
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
+
+  &:not(:first-child) .main-navigation__link {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
 .main-navigation__link {
+  display: block;
+  padding: 7px 20px;
   text-decoration: none;
   color: $color-light;
+  background-color: $color-bg-blue;
+
+  &:hover {
+    background-color: $color-bg-blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-bg-blue-down;
+  }
 }

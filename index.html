@@ -12,10 +12,10 @@
       <header class="page-header">
         <nav class="page-header__navigation main-navigation">
           <ul class="main-navigation__list">
-            <li><a class="main-navigation__link">Главная</a></li>
-            <li><a href="photo.html" class="main-navigation__link">Фото и видео</a></li>
-            <li><a href="form.html" class="main-navigation__link">Форма отзыва</a></li>
-            <li><a href="https://htmlacademy.ru/" class="main-navigation__link">HTML Academy</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link">Главная</a></li>
+            <li class="main-navigation__item"><a href="photo.html" class="main-navigation__link">Фото и видео</a></li>
+            <li class="main-navigation__item"><a href="form.html" class="main-navigation__link">Форма отзыва</a></li>
+            <li class="main-navigation__item"><a href="https://htmlacademy.ru/" class="main-navigation__link">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="page-header__logo-wrapper">
@@ -23,7 +23,7 @@
             <img src="img/logo-sedona-mobile.svg" alt="Sedona логотип">
           </a>
         </div>
-        <div class="page-header__toggle">
+        <div class="page-header__toggle page-header__toggle--menu-opened">
           <span class="page-header__toggle-element">
             <span class="visually-hidden">Переключатель меню</span>
           </span>
@@ -51,23 +51,20 @@
             </div>
           </div>
           <ul class="service">
-            <li class="service__item">
+            <li class="service__item service__item--house">
               <h3 class="service__item-title">Жилье</h3>
               <p class="service__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="service__item">
+            <li class="service__item service__item--gift">
               <h3 class="service__item-title">Сувениры</h3>
               <p class="service__item-description">Не только китайского, но и местного производства!</p>
             </li>
-            <li class="service__item">
+            <li class="service__item service__item--food">
               <h3 class="service__item-title">Еда</h3>
               <p class="service__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
           <div class="advantages__block-advantage">
-            <div class="advantages__image">
-              <img src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
-            </div>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--blue">
                 <h3 class="advantages__item-title">Там есть Мост дьявола</h3>
@@ -75,6 +72,9 @@
                 <p class="advantages__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </li>
             </ul>
+            <div class="advantages__image">
+              <img src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
+            </div>
           </div>
           <div class="advantages__block-advantage advantages__block-advantage--gray">
             <ul class="advantages__list">
@@ -125,5 +125,6 @@
         </div>
       </footer>
     </div><!-- container -->
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

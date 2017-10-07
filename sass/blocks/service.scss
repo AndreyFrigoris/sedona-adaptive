@@ -1,18 +1,48 @@
 .service {
   @include list;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   text-align: left;
-  background-color: $color-bg-gray;
+  background-color: $color-light;
 }
 
 .service__item {
-  padding: 15px 20px 15px 22%;
+  position: relative;
+  padding: 16px 20px 12px 22%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width:38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--house::before {
+    top: 7px;
+    left: 21px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--gift::before {
+    top: 5px;
+    left: 26px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food::before {
+    top: 12px;
+    left: 19px;
+    background-image: url("../img/icon-burger.svg");
+  }
 }
 
 .service__item-title {
   @include text(18px, 26px);
   margin-top: 0;
+  margin-bottom: 14px;
 }
 
 .service__item-description {

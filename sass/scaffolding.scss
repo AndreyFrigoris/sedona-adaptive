@@ -22,11 +22,14 @@
   box-sizing: inherit;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $main-font;
   font-size: 14px;
   text-transform: uppercase;
   color: $color-text;
   background-color: $color-input;
-  box-sizing: border-box;
 }
