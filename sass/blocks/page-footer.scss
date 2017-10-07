@@ -45,3 +45,24 @@
   top: -3px;
   right: 0;
 }
+
+@media ($tablet-widths) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__visit {
+    width: 33%;
+    padding-top: 46px;
+  }
+
+  .page-footer__social {
+    width: 33%;
+  }
+
+  .page-footer__copyright {
+    width: 33%;
+    padding-top: 46px;
+  }
+}
