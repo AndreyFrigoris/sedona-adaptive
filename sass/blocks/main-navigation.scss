@@ -83,15 +83,15 @@
       background-color: $color-light;
     }
 
-    &.active {
+    &--active {
       color: #766357;
     }
 
-    &.active:hover {
+    &--active:hover {
       color: #604e43;
     }
 
-    &.active:active {
+    &--active:active {
       color: rgba(118, 99, 87, 0.3);
     }
   }
