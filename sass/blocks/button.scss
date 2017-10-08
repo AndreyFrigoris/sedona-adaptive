@@ -11,4 +11,13 @@
   background-color: $color-bg-blue;
   border: none;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: $color-bg-blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-bg-blue-down;
+  }
 }

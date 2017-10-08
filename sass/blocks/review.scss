@@ -7,7 +7,7 @@
   padding-bottom: 3px;
   padding-left: 20px;
   padding-right: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $color-border-light;
 }
 
 .review__title {
@@ -19,7 +19,7 @@
 .review__description {
   line-height: 24px;
   text-align: center;
-  color: $color-text-light;
+  color: $color-text-dark;
 }
 
 .review__form {
@@ -33,7 +33,7 @@
   padding-right: 20px;
   margin: 0;
   border: none;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $color-border-light;
 
   &--visited {
     padding-bottom: 0;
@@ -60,7 +60,7 @@
 
 .review__name-label {
   padding-right: 15px;
-  color: $color-text-light;
+  color: $color-text-dark;
 }
 
 .review__name-input {
@@ -88,7 +88,7 @@
   display: block;
   padding-left: 22px;
   margin-bottom: 7px;
-  color: $color-text-light;
+  color: $color-text-dark;
 }
 
 .review__contact-input {
@@ -139,7 +139,7 @@
     display: none;
     width: 22px;
     height: 22px;
-    background-color: #333333;
+    background-color: $color-text-dark;
     border-radius: 50%;
     transform: translateY(-50%);
   }

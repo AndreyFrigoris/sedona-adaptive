@@ -1,16 +1,30 @@
 .photo-block {
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: left;
 }
 
 .photo-block__item {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  border-top: 1px solid $color-border-light;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border-light;
+  }
+}
+
+.photo-block__item-link {
+  @include text(0, 0);
+  display: block;
+}
+
+.photo-block__item-image {
+  @include text(0, 0);
 }
 
 .photo-block__item-description {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .photo-block__item-title {
@@ -19,11 +33,93 @@
 }
 
 .photo-block__item-author {
-  color: $color-text-light;
+  margin: 0;
+  color: $color-text-dark;
   text-transform: none;
 }
 
 .photo-block__item-likes {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 0;
   padding-left: 38px;
   font-weight: bold;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 22px;
+    height: 20px;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media ($tablet-widths) {
+  .photo-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .photo-block__item {
+    width: 50%;
+    padding: 0;
+    background-color: $color-input;
+    border: none;
+
+    &:nth-child(2n+1):not(.photo-block__item--main) {
+      background-color: $color-bg-card;
+    }
+
+    &--main {
+      width: 100%;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .photo-block__item-link {
+    text-align: center;
+  }
+
+  .photo-block__item-image {
+    width: 100%;
+  }
+
+  .photo-block__item-description {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+  }
+
+  .photo-block__item-likes {
+    min-width: 70px;
+    margin-top: 13px;
+
+    &::before {
+      left: 6px;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .photo-block__item {
+    flex-grow: 1;
+    width: auto;
+
+    &--main {
+      width: 100%;
+    }
+  }
 }
