@@ -51,6 +51,10 @@
   color: $color-text-light;
 }
 
+.service__item-description br {
+  display: none;
+}
+
 @media ($tablet-widths) {
   .service {
     display: flex;
@@ -59,7 +63,7 @@
 
   .service__item {
     width: 33%;
-    padding: 139px 40px 36px 40px;
+    padding: 139px 5% 36px 5%;
     text-align: center;
 
     &--gift {
@@ -93,5 +97,20 @@
   .service__item-title {
     margin-bottom: 21px;
     font-size: 21px;
+  }
+}
+
+@media ($desktop-widths) {
+  .service__item {
+    padding-bottom: 57px;
+
+    &--food {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  }
+
+  .service__item-description br {
+    display: inline;
   }
 }

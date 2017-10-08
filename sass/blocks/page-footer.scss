@@ -50,6 +50,7 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 36px;
   }
 
   .page-footer__visit {
@@ -64,5 +65,13 @@
   .page-footer__copyright {
     width: 33%;
     padding-top: 46px;
+    padding-right: 60px;
+    text-align: right;
+  }
+}
+
+@media ($desktop-widths) {
+  .page-footer__copyright {
+    padding-right: 45px;
   }
 }

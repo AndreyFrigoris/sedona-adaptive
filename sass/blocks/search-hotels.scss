@@ -21,7 +21,13 @@
 
 @media ($tablet-widths) {
   .search-hotels {
-    padding: 52px 156px 59px 156px;
+    padding-top: 52px;
+    padding-bottom: 59px;
+  }
+
+  .search-hotels__inner {
+    width: 460px;
+    margin: 0 auto;
   }
 
   .search-hotels__interest {
@@ -35,5 +41,15 @@
 
   .search-hotels__manual br {
     display: inline;
+  }
+}
+
+@media ($desktop-widths) {
+  .search-hotels {
+    padding-bottom: 67px;
+  }
+
+  .search-hotels__manual {
+    margin-bottom: 48px;
   }
 }
