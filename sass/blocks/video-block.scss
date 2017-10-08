@@ -81,22 +81,22 @@
 }
 
 .video-block__replay path,
-.video-block__video-subtitles path ,
+.video-block__video-subtitles path,
 .video-block__fullscreen polygon {
   fill: $color-controls;
 }
 
 .video-block__replay:hover path,
-.video-block__video-subtitles:hover path ,
+.video-block__video-subtitles:hover path,
 .video-block__fullscreen:hover polygon,
 .video-block__replay:focus path,
-.video-block__video-subtitles:focus path ,
+.video-block__video-subtitles:focus path,
 .video-block__fullscreen:focus polygon {
   fill: $color-text-dark;
 }
 
 .video-block__replay:active path,
-.video-block__video-subtitles:active path ,
+.video-block__video-subtitles:active path,
 .video-block__fullscreen:active polygon {
   fill: $color-controls-down;
 }
@@ -149,7 +149,7 @@
   }
 
   .video-block__replay path,
-  .video-block__video-subtitles path ,
+  .video-block__video-subtitles path,
   .video-block__fullscreen polygon {
     fill: $color-light;
   }
