@@ -20,4 +20,9 @@
     color: rgba(255, 255, 255, 0.3);
     background-color: $color-bg-blue-down;
   }
+
+  &:disabled,
+  &--disabled {
+    background-color: $color-border-light;
+  }
 }
