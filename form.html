@@ -20,7 +20,11 @@
         </nav>
         <div class="page-header__logo-wrapper">
           <a href="index.html" class="page-header__logo-link">
-            <img src="img/logo-sedona-mobile.svg" alt="Sedona логотип">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" alt="Sedona логотип">
+            </picture>
           </a>
         </div>
         <div class="page-header__toggle page-header__toggle--menu-opened">
