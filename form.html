@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>Оставить отзыв</title>
+    <title>Sedona: Оставить отзыв</title>
   </head>
   <body>
     <div class="container">
       <header class="page-header">
         <nav class="page-header__navigation main-navigation">
           <ul class="main-navigation__list">
-            <li><a href="index.html" class="main-navigation__link">Главная</a></li>
-            <li><a href="photo.html" class="main-navigation__link">Фото и видео</a></li>
-            <li><a class="main-navigation__link">Форма отзыва</a></li>
-            <li><a href="https://htmlacademy.ru/" class="main-navigation__link">HTML Academy</a></li>
+            <li class="main-navigation__item"><a href="index.html" class="main-navigation__link">Главная</a></li>
+            <li class="main-navigation__item"><a href="photo.html" class="main-navigation__link">Фото и видео</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link main-navigation__link--active">Форма отзыва</a></li>
+            <li class="main-navigation__item"><a href="https://htmlacademy.ru/" class="main-navigation__link">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="page-header__logo-wrapper">
@@ -23,7 +23,7 @@
             <img src="img/logo-sedona-mobile.svg" alt="Sedona логотип">
           </a>
         </div>
-        <div class="page-header__toggle">
+        <div class="page-header__toggle page-header__toggle--menu-opened">
           <span class="page-header__toggle-element">
             <span class="visually-hidden">Переключатель меню</span>
           </span>
@@ -36,11 +36,11 @@
         <section class="review">
           <div class="review__title-wrapper">
             <h1 class="review__title">Оставьте свой отзыв</h1>
-            <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
           </div>
           <form class="review__form" action="https://echo.htmlacademy.ru/">
-            <fieldset class="review__fieldset">
-              <legend class="review__legend">Представьтесь:</legend>
+            <fieldset class="review__fieldset review__fieldset--name">
+              <legend class="review__legend review__legend--name">Представьтесь:</legend>
               <div class="review__name-inner">
                 <label for="author-name" class="review__name-label">Имя*:</label>
                 <input id="author-name" class="review__name-input" type="text" name="author-name" value="Петр" required>
@@ -54,48 +54,51 @@
                 <input id="author-patronymic" class="review__name-input" type="text" name="author-patronymic" value="Александрович">
               </div>
             </fieldset>
-            <fieldset class="review__fieldset">
-              <legend class="review__legend">Контактная информация:</legend>
+            <fieldset class="review__fieldset review__fieldset--contact">
+              <legend class="review__legend review__legend--contact">Контактная информация:</legend>
               <div class="review__contact-wrapper">
-                <div class="review__contant-inner">
-                  <label for="contact-phone" class="review__contact-label">Контактный телефон*:</label>
+                <div class="review__contant-inner review__contant-inner--phone">
+                  <label for="contact-phone" class="review__contact-label"><span class="review__contact-span">Контактный</span> телефон*:</label>
                   <input id="contact-phone" type="tel" class="review__contact-input" name="contact-phone" value="Введите телефон" required>
                 </div>
-                <div class="review__contant-inner">
+                <div class="review__contant-inner review__contant-inner--email">
                   <label for="contact-email" class="review__contact-label">Электронная почта*:</label>
                   <input id="contact-email" type="email" class="review__contact-input" name="contact-email" value="Введите e-mail" required>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="review__fieldset">
-              <legend class="review__legend">Ваше общее впечатление:</legend>
+            <fieldset class="review__fieldset review__fieldset--rating">
+              <legend class="review__legend review__legend--rating">Ваше общее впечатление:</legend>
               <div class="review__rating-wrapper">
                 <input id="rating-good" type="radio" class="review__rating-input" name="rating" value="rating-good" checked>
-                <label for="rating-good" class="review__rating-label">Скорее положительное</label>
+                <label for="rating-good" class="review__rating-label" tabindex="1">Скорее положительное</label>
                 <input id="rating-bad" type="radio" class="review__rating-input" name="rating" value="rating-bad">
-                <label for="rating-bad" class="review__rating-label">Скорее отрицательное</label>
+                <label for="rating-bad" class="review__rating-label" tabindex="2">Скорее отрицательное</label>
                 <input id="rating-no" type="radio" class="review__rating-input" name="rating" value="rating-no">
-                <label for="rating-no" class="review__rating-label">Затрудняюсь ответить</label>
+                <label for="rating-no" class="review__rating-label" tabindex="3">Затрудняюсь ответить</label>
               </div>
             </fieldset>
             <fieldset class="review__fieldset review__fieldset--visited">
-              <legend class="review__legend">Посещенные достопримечательности:</legend>
+              <legend class="review__legend review__legend--visited">Посещенные достопримечательности:</legend>
               <div class="review__visited-wrapper">
                 <input id="review-bridge" type="checkbox" class="review__visited-input" name="bridge" checked>
-                <label for="review-bridge" class="review__visited-label">Мост Дьявола</label>
+                <label for="review-bridge" class="review__visited-label" tabindex="4">Мост Дьявола</label>
                 <input id="review-park" type="checkbox" class="review__visited-input" name="park" checked>
-                <label for="review-park" class="review__visited-label">Слайд-парк</label>
+                <label for="review-park" class="review__visited-label" tabindex="5">Слайд-парк</label>
                 <input id="review-mountain" type="checkbox" class="review__visited-input" name="mountain">
-                <label for="review-mountain" class="review__visited-label">Гора-Колокол</label>
+                <label for="review-mountain" class="review__visited-label" tabindex="6">Гора-Колокол</label>
                 <input id="review-cliffs" type="checkbox" class="review__visited-input" name="cliffs" checked>
-                <label for="review-cliffs" class="review__visited-label">Красные скалы</label>
+                <label for="review-cliffs" class="review__visited-label" tabindex="7">Красные скалы</label>
               </div>
             </fieldset>
-            <fieldset class="review__fieldset review__fieldset--no-border">
-              <legend class="review__legend">Опишите свои эмоции:</legend>
+            <fieldset class="review__fieldset review__fieldset--no-border review__fieldset--impression">
+              <legend class="review__legend review__legend--impression">Опишите свои эмоции:</legend>
               <textarea class="review__impression-textarea" name="impression" rows="5">Опишите подробно все свои восторги</textarea>
             </fieldset>
-            <input type="submit" class="review__submit button" value="Отправить отзыв">
+            <div class="review__submit-wrapper">
+              <input type="submit" class="review__submit button" value="Отправить отзыв">
+              <p class="review__required">* — обязательные поля</p>
+            </div>
           </form>
         </section>
       </main>
@@ -104,19 +107,22 @@
           <a href="#" class="page-footer__visit-sedona">#VisitSedona</a>
         </div>
         <div class="page-footer__social social">
-          <a href="#" class="social__link">
+          <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
           </a>
-          <a href="#" class="social__link">
+          <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
           </a>
-          <a href="#" class="social__link">
+          <a href="#" class="social__link social__link--yt">
             <span class="visually-hidden">YouTube</span>
           </a>
         </div>
         <div class="page-footer__copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">Разработано
             <span class="visually-hidden">HTML Academy</span>
+            <svg class="page-footer__academy" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
           </a>
         </div>
       </footer>
@@ -133,5 +139,6 @@
         <button class="report__button button">Закрыть окно</button>
       </div>
     </div>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
