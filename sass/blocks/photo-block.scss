@@ -116,10 +116,21 @@
 @media ($desktop-widths) {
   .photo-block__item {
     flex-grow: 1;
-    width: auto;
+    width: 33%;
 
     &--main {
       width: 100%;
     }
+  }
+
+  .photo-block__item-description {
+    position: relative;
+    margin-top: -80px;
+    color: $color-light;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-block__item-author {
+    color: $color-light;
   }
 }

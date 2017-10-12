@@ -60,10 +60,6 @@
   @include text(0, 0);
 }
 
-.advantages__image img {
-  min-width: 50%;
-}
-
 .advantages__block-advantage--gray {
   background-color: $color-bg-gray;
 }
@@ -160,12 +156,14 @@
     position: relative;
     width: 67%;
     overflow: hidden;
+    background-color: $color-bg-blue;
   }
 
   .advantages__image img {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
   }
 }

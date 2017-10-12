@@ -77,7 +77,8 @@
 @media ($tablet-widths) {
   .page-header__logo-wrapper {
     position: absolute;
-    bottom: -28px;
+    // bottom: -28px;
+    top: 0;
     left: 50%;
     height: 84px;
     transform: translateX(-50%);
@@ -92,5 +93,11 @@
 
   .page-header__toggle {
     display: none;
+  }
+}
+
+@media ($desktop-widths) {
+  .page-header__logo-wrapper {
+    height: 96px;
   }
 }

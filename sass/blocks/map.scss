@@ -5,3 +5,36 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media ($retina-dpi), ($retina-dppx) {
+  .map {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+@media ($tablet-widths) {
+  .map {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+
+  @media ($retina-dpi), ($retina-dppx) {
+    .map {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+
+  @media ($retina-dpi), ($retina-dppx) {
+    .map {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+}

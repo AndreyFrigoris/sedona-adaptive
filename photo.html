@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"><script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.min.js" async></script>
     <title>Sedona: Фотографии</title>
   </head>
   <body>
@@ -20,7 +24,11 @@
         </nav>
         <div class="page-header__logo-wrapper">
           <a href="index.html" class="page-header__logo-link">
-            <img src="img/logo-sedona-mobile.svg" alt="Sedona логотип">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" alt="Sedona логотип">
+            </picture>
           </a>
         </div>
         <div class="page-header__toggle page-header__toggle--menu-opened">
@@ -39,7 +47,11 @@
           <div class="photo-block">
             <div class="photo-block__item photo-block__item--main">
               <a href="#" class="photo-block__item-link">
-                <img src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы" class="photo-block__item-image">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы"  class="photo-block__item-image">
+                </picture>
               </a>
               <div class="photo-block__item-description">
                 <div class="photo-block__title-wrapper">
@@ -51,7 +63,11 @@
             </div>
             <div class="photo-block__item">
               <a href="#" class="photo-block__item-link">
-                <img src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" class="photo-block__item-image">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность" class="photo-block__item-image">
+                </picture>
               </a>
               <div class="photo-block__item-description">
                 <div class="photo-block__title-wrapper">
@@ -63,7 +79,11 @@
             </div>
             <div class="photo-block__item">
               <a href="#" class="photo-block__item-link">
-                <img src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" class="photo-block__item-image">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север" class="photo-block__item-image">
+                </picture>
               </a>
               <div class="photo-block__item-description">
                 <div class="photo-block__title-wrapper">
@@ -75,7 +95,11 @@
             </div>
             <div class="photo-block__item">
               <a href="#" class="photo-block__item-link">
-                <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" class="photo-block__item-image">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" class="photo-block__item-image">
+                </picture>
               </a>
               <div class="photo-block__item-description">
                 <div class="photo-block__title-wrapper">
@@ -90,7 +114,7 @@
             <p class="video-block__interest">Все еще сомневаетесь?</p>
             <p class="video-block__manual">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <div class="video-block__wrapper-video">
-              <video src="#" class="video-block__video" poster="img/video-mobile@1x.jpg"></video>
+              <video src="#" class="video-block__video"></video>
               <div class="video-block__controls">
                 <div class="video-block__progressbar">
                   <span class="visually-hidden">Прогресс видео</span>
