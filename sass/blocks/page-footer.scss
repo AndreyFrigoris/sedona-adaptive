@@ -31,11 +31,11 @@
   text-decoration: none;
   color: $color-text;
 
-  &:hover path {
+  &:hover .page-footer__academy {
     fill: $color-bg-blue;
   }
 
-  &:active path {
+  &:active .page-footer__academy {
     fill: #b2b2b2;
   }
 }
