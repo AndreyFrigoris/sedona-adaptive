@@ -15,7 +15,8 @@ module.exports = function(grunt) {
           src: [
             'fonts/**/*.{woff,woff2}',
             'img/**',
-            'js/**'
+            'js/**',
+            '*.html'
           ],
           dest: 'build'
         }]
@@ -83,7 +84,7 @@ module.exports = function(grunt) {
       },
       sprite: {
         files: {
-          'build/img/sprite.svg': ['img/icon-*.svg']
+          'img/sprite.svg': ['img/icon-*.svg']
         }
       }
     },
@@ -141,8 +142,6 @@ module.exports = function(grunt) {
     'copy',
     'sass',
     'postcss',
-    'csso',
-    'svgstore',
-    'posthtml'
+    'csso'
   ]);
 };
