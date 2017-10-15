@@ -26,6 +26,7 @@
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: transparent;
 }
 
 .video-block__controls {
@@ -88,24 +89,24 @@
   cursor: pointer;
 }
 
-.video-block__replay,
-.video-block__video-subtitles,
-.video-block__fullscreen {
+.video-block__replay svg,
+.video-block__video-subtitles svg,
+.video-block__fullscreen svg {
   fill: $color-controls;
 }
 
-.video-block__replay:hover,
-.video-block__video-subtitles:hover,
-.video-block__fullscreen:hover,
-.video-block__replay:focus,
-.video-block__video-subtitles:focus,
-.video-block__fullscreen:focus {
+.video-block__replay:hover svg,
+.video-block__video-subtitles:hover svg,
+.video-block__fullscreen:hover svg,
+.video-block__replay:focus svg,
+.video-block__video-subtitles:focus svg,
+.video-block__fullscreen:focus svg {
   fill: $color-text-dark;
 }
 
-.video-block__replay:active,
-.video-block__video-subtitles:active,
-.video-block__fullscreen:active {
+.video-block__replay:active svg,
+.video-block__video-subtitles:active svg,
+.video-block__fullscreen:active svg {
   fill: $color-controls-down;
 }
 
@@ -168,9 +169,9 @@
     left: 153px;
   }
 
-  .video-block__replay,
-  .video-block__video-subtitles,
-  .video-block__fullscreen {
+  .video-block__replay svg,
+  .video-block__video-subtitles svg,
+  .video-block__fullscreen svg {
     fill: $color-light;
   }
 

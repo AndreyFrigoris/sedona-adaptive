@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <script>
       // Picture element HTML5 shiv
-      document.createElement( "picture" );
+      document.createElement("picture");
     </script>
-    <script src="picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
     <title>Sedona</title>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="container">
       <header class="page-header">
         <nav class="page-header__navigation main-navigation">
@@ -23,6 +26,7 @@
             <li class="main-navigation__item"><a href="https://htmlacademy.ru/" class="main-navigation__link">HTML Academy</a></li>
           </ul>
         </nav>
+        <!-- по умолчанию меню открыто, модификатор closed для блока main-navigation закрывает меню -->
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo-link">
             <picture>
@@ -32,11 +36,13 @@
             </picture>
           </a>
         </div>
-        <div class="page-header__toggle page-header__toggle--menu-opened">
+        <div class="page-header__toggle page-header__toggle--no-js">
           <span class="page-header__toggle-element">
             <span class="visually-hidden">Переключатель меню</span>
           </span>
         </div>
+        <!-- элемент page-header__toggle с модификатором no-js убирает переключатель, -->
+        <!-- элемент page-header__toggle с модификатором menu-opened преобразует бургер в крестик -->
       </header>
       <main>
         <div class="site-title site-title--index">
@@ -120,7 +126,7 @@
             <a href="search-hotels.html" class="search-hotels__button button">Найти гостиницу</a>
           </div>
         </div>
-        <div class="map"></div>
+        <div class="map" id="map"></div>
       </main>
       <footer class="page-footer">
         <div class="page-footer__visit">
@@ -141,12 +147,14 @@
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">Разработано
             <span class="visually-hidden">HTML Academy</span>
             <svg class="page-footer__academy" width="27px" height="34px">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </footer>
     </div><!-- container -->
     <script type="text/javascript" src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvX8nsGdFNcK4ybTiUACjhRdjuEzZ9eAA&signed_in=true&callback=initMap">
+    </script>
   </body>
 </html>
