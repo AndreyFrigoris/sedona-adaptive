@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css"><script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
       // Picture element HTML5 shiv
-      document.createElement( "picture" );
+      document.createElement("picture");
     </script>
-    <script src="picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
     <title>Sedona: Оставить отзыв</title>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="container">
       <header class="page-header">
         <nav class="page-header__navigation main-navigation">
@@ -23,6 +27,7 @@
             <li class="main-navigation__item"><a href="https://htmlacademy.ru/" class="main-navigation__link">HTML Academy</a></li>
           </ul>
         </nav>
+        <!-- по умолчанию меню открыто, модификатор closed для блока main-navigation закрывает меню -->
         <div class="page-header__logo-wrapper">
           <a href="index.html" class="page-header__logo-link">
             <picture>
@@ -32,11 +37,13 @@
             </picture>
           </a>
         </div>
-        <div class="page-header__toggle page-header__toggle--menu-opened">
+        <div class="page-header__toggle page-header__toggle--no-js">
           <span class="page-header__toggle-element">
             <span class="visually-hidden">Переключатель меню</span>
           </span>
         </div>
+        <!-- элемент page-header__toggle с модификатором no-js убирает переключатель, -->
+        <!-- элемент page-header__toggle с модификатором menu-opened преобразует бургер в крестик -->
       </header>
       <main>
         <div class="site-title">
@@ -47,7 +54,7 @@
             <h1 class="review__title">Оставьте свой отзыв</h1>
             <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
           </div>
-          <form class="review__form" action="https://echo.htmlacademy.ru/">
+          <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="review__fieldset review__fieldset--name">
               <legend class="review__legend review__legend--name">Представьтесь:</legend>
               <div class="review__name-inner">
@@ -68,11 +75,11 @@
               <div class="review__contact-wrapper">
                 <div class="review__contant-inner review__contant-inner--phone">
                   <label for="contact-phone" class="review__contact-label"><span class="review__contact-span">Контактный</span> телефон*:</label>
-                  <input id="contact-phone" type="tel" class="review__contact-input" name="contact-phone" value="Введите телефон" required>
+                  <input id="contact-phone" type="tel" class="review__contact-input" name="contact-phone" pattern="^[ 0-9]+$" value="Введите телефон" required>
                 </div>
                 <div class="review__contant-inner review__contant-inner--email">
                   <label for="contact-email" class="review__contact-label">Электронная почта*:</label>
-                  <input id="contact-email" type="email" class="review__contact-input" name="contact-email" value="Введите e-mail" required>
+                  <input id="contact-email" type="email" class="review__contact-input" name="contact-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" value="Введите e-mail" required>
                 </div>
               </div>
             </fieldset>
@@ -130,20 +137,20 @@
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">Разработано
             <span class="visually-hidden">HTML Academy</span>
             <svg class="page-footer__academy" width="27px" height="34px">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </footer>
     </div><!-- container -->
     <div class="report report--not-sent">
-      <h2 class="report__title">Что-то пошло не так!</h2>
+      <h2 class="report__title">Что-то пошло не&nbsp;так!</h2>
       <p class="report__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="report__button button">OK</button>
     </div>
     <div class="report report--sent">
       <h2 class="report__title">Ваш отзыв отправлен!</h2>
-      <p class="report__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      <p class="report__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
       <div class="report__button-wrapper">
         <button class="report__button button">Закрыть окно</button>
       </div>

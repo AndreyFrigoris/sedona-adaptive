@@ -26,6 +26,10 @@
   width: 63px;
   height: 56px;
   cursor: pointer;
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .page-header__toggle-element {
@@ -34,7 +38,6 @@
   width: 23px;
   height: 4px;
   background-color: $color-bg-blue;
-  // transition: all 0.3s ease-in-out;
 
   &::before,
   &::after {
@@ -77,7 +80,6 @@
 @media ($tablet-widths) {
   .page-header__logo-wrapper {
     position: absolute;
-    // bottom: -28px;
     top: 0;
     left: 50%;
     height: 84px;

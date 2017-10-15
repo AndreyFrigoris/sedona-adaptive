@@ -50,3 +50,37 @@
 .report__button-wrapper .report__button {
   width: 100%;
 }
+
+@media ($tablet-widths) {
+  .report__title {
+    @include text(30px, 40px);
+  }
+
+  .report {
+    &--not-sent {
+      width: 400px;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 50px;
+    }
+
+    &--sent {
+      width: 640px;
+    }
+  }
+
+  .report__description {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 35px;
+  }
+
+  .report__button {
+    @include text(21px, 26px);
+    width: 270px;
+  }
+
+  .report__button-wrapper {
+    padding: 45px 90px;
+  }
+}
