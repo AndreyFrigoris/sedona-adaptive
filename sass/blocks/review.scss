@@ -396,20 +396,20 @@
     }
 
     &--contact {
-      margin: 0 auto;
+      margin-left: 124px;
       padding-top: 0;
       padding-left: 60px;
       padding-right: 60px;
     }
 
     &--visited {
-      margin: 0 auto;
+      margin-left: 124px;
       width: 400px;
       padding-top: 0;
     }
 
     &--impression {
-      margin: 0 auto;
+      margin-left: 124px;
       width: 400px;
       padding-top: 0;
     }
@@ -500,6 +500,18 @@
   .review__legend {
     &--rating {
       padding-left: 75px;
+    }
+
+    &--contact {
+      margin-left: 280px;
+    }
+
+    &--visited {
+      margin-left: 280px;
+    }
+
+    &--impression {
+      margin-left: 280px;
     }
   }
 
