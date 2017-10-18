@@ -143,7 +143,6 @@ module.exports = function(grunt) {
     'postcss',
     'csso',
     'svgstore',
-    'posthtml',
-    'csso'
+    'posthtml'
   ]);
 };
