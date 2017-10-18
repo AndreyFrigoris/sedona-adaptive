@@ -54,6 +54,10 @@
   &--no-border {
     border: none;
   }
+
+  &--impression {
+    min-height: 274px;
+  }
 }
 
 .review__legend {
@@ -61,6 +65,22 @@
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+
+  &--name {
+    margin-left: 70px;
+  }
+
+  &--contact {
+    margin-left: 20px;
+  }
+
+  &--rating {
+    margin-left: 20px;
+  }
+
+  &--impression {
+    margin-left: 33px;
+  }
 }
 
 .review__name-inner {
@@ -274,7 +294,6 @@
   width: 100%;
   height: 160px;
   padding: 15px 20px;
-  margin-bottom: 35px;
   font-family: $main-font;
   font-weight: bold;
   background-color: $color-input;
@@ -362,6 +381,7 @@
     &--impression {
       order: 5;
       width: 100%;
+      min-height: 302px;
       margin-left: 60px;
       margin-right: 60px;
       padding-left: 0;
@@ -395,10 +415,12 @@
     @include text(21px, 26px);
 
     &--rating {
+      margin-left: 0;
       text-align: left;
     }
 
     &--name {
+      margin-left: 0;
       text-align: left;
     }
 
