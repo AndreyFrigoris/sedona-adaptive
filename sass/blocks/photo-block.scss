@@ -109,9 +109,18 @@
 }
 
 @media ($desktop-widths) {
+  .photo-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo-block__item-description {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
   .photo-block__item {
-    flex-grow: 1;
-    width: 33%;
+    width: 400px;
 
     &--main {
       width: 100%;

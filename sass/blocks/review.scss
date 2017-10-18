@@ -7,6 +7,13 @@
   border-radius: 0;
 }
 
+.review input {
+  @include placeholder {
+    color: $color-text;
+    opacity: 1;
+  }
+}
+
 .review__title-wrapper {
   padding-top: 24px;
   padding-bottom: 3px;
